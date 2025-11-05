@@ -9,7 +9,36 @@
 ¿Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados?  
 
 **✏️ Respuesta:**  
-...
+
+Las funciones que se utilizan en Unity para realizar transformaciones en los *scripts* son las siguientes:
+
+### 🔹 Traslaciones
+- `Translate()`: permite mover un objeto de forma **relativa** respecto a su posición actual.  
+  
+  ```csharp
+  transform.Translate(2, 0, 0); // Mueve el objeto 2 unidades en el eje X
+  ```
+### 🔹 Rotaciones
+- `Rotate()`: realiza una rotación relativa expresada en grados.
+  ```csharp
+  transform.Rotate(0, 45, 0); // Rota el objeto 45º en el eje Y
+  ```
+- `LookAt()`: orienta el objeto para que mire hacia un punto objetivo.
+
+  ```csharp
+  transform.LookAt(target);
+  ```
+- `rotation`: define una rotación absoluta, normalmente usando `Quaternion`.
+
+  ```csharp
+  transform.rotation = Quaternion.Euler(0, 90, 0);
+  ```
+### 🔹 Escalado
+- `localScale`: modifica el tamaño del objeto de manera absoluta en los tres ejes.
+
+  ```csharp
+  transform.localScale = new Vector3(2, 1, 1); // Escala el objeto al doble en el eje X
+  ```
 
 ## 🌍 **Pregunta 2**
 **🔹 Enunciado:**  
