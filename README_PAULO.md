@@ -97,7 +97,8 @@ Especifica las rotaciones que se han indicado en los ejercicios previos con la u
 ¿Cómo puedes averiguar la matriz de proyección ortográfica que se ha usado para proyectar la escena al último *frame* renderizado?  
 
 **✏️ Respuesta:**  
-...
+
+Para obtener la matriz de proyección ortográfica usada por la cámara en el último frame renderizado, se puede acceder a la propiedad `camera.projectionMatrix` dentro de un script en Unity. Hemos realizado un pequeño script de depuración llamado **[`ProjectionDebugger.cs`](./Scripts/ProjectionDebugger.cs)**. Este script obtiene la cámara del objeto al que está adjunto y muestra por consola su matriz de proyección con formato legible.
 
 ## 🌍 **Pregunta 10**
 **🔹 Enunciado:**  
@@ -141,7 +142,10 @@ Aplica una rotación en el método `Start()` de uno de los objetos de la escena 
 - Rotation: (45, 0, 45)
 
 **✏️ Respuesta:**  
-...
+
+Se ha utilizado el script **[`ReferenceSystem.cs`](./Scripts/ReferenceSystem.cs)**, que obtiene e imprime en consola la posición del origen y los ejes locales expresados en coordenadas globales. El script también muestra la matriz `localToWorldMatrix`, que combina traslación, rotación y escala, y permite transformar cualquier punto del espacio local a coordenadas mundiales.
+
+![imgEjer15](./Multimedia/Ejer15.png)
 
 ## 🌍 **Pregunta 16**
 **🔹 Enunciado:**  
@@ -167,20 +171,47 @@ Aplica la transformación manualmente a un punto (por ejemplo `(0.5, 0.5, 0.5)`)
 
 ## 🌍 **Pregunta 18**
 **🔹 Enunciado:**  
-Mueve o rota uno de los cubos y muestra cómo cambian los valores de su matriz de modelo.  
-Rota la cámara y muestra cómo se modifica la matriz de vista.  
-Cambia entre proyección ortográfica y perspectiva y compara las diferencias numéricas en la matriz de proyección.  
+Mueve o rota uno de los cubos y muestra cómo cambian los valores de su matriz de modelo. Rota la cámara y muestra cómo se modifica la matriz de vista. Cambia entre proyección ortográfica y perspectiva y compara las diferencias numéricas en la matriz de proyección.  
 
 **✏️ Respuesta:**  
-...
+Para responder a la pregunta se dividirá en tres apartados:  
+1. El primero consiste en la rotación o movimiento de un cubo y exponer los valores de la matriz. Para ello se le hizo un movimiento a la posición (2, 1, 0) partiendo de (0, 0.5, 0). Además una rotación de 15º en X y Z. A continuación se muestran las matrices:
 
-## 📝 **Notas finales**
-- Utiliza formato Markdown para una mejor presentación:  
-  - **Negrita** → conceptos clave  
-  - *Cursiva* → ejemplos o aclaraciones  
-  - `Código` → términos técnicos  
-- Si una pregunta requiere un cálculo, inclúyelo así:
+    🟦 Matriz inicial de modelo:
+    | m00 | m01 | m02 | m03 |
+    |:----:|:----:|:----:|:----:|
+    | 1.000 | 0.000 | 0.000 | 0.000 |
+    | 0.000 | 1.000 | 0.000 | 0.500 |
+    | 0.000 | 0.000 | 1.000 | 0.000 |
+    | 0.000 | 0.000 | 0.000 | 1.000 |
 
-  ```text
-  Ejemplo de cálculo:
-  Z = X + Y / 2
+    🔁 Matriz de modelo actualizada:
+    | m00 | m01 | m02 | m03 |
+    |:----:|:----:|:----:|:----:|
+    | 0,9659 | -0,2588 | 0,0000 | 2,0000 |
+    | 0,2500 | 0,9330 | -0,2588 | 1,0000 |
+    | 0,0670 | 0,2500 | 0,9659 | 0,0000 |
+    | 0,0000 | 0,0000 | 0,0000 | 1,0000 |
+
+2. El segundo consiste
+
+┌──────────────────┐
+│   1,0000   0,0000   0,0000   0,0000 │
+│   0,0000   1,0000   0,0000  -1,0000 │
+│   0,0000   0,0000  -1,0000 -10,0000 │
+│   0,0000   0,0000   0,0000   1,0000 │
+└──────────────────┘
+
+┌──────────────────┐
+│   0,7071   0,0000  -0,7071  -7,0711 │
+│   0,0000   1,0000   0,0000  -1,0000 │
+│  -0,7071   0,0000  -0,7071  -7,0711 │
+│   0,0000   0,0000   0,0000   1,0000 │
+└──────────────────┘
+
+┌──────────────────┐
+│   1,0000   0,0000   0,0000   0,0000 │
+│   0,0000   1,0000   0,0000   0,0000 │
+│   0,0000   0,0000  -1,0000   0,0000 │
+│   0,0000   0,0000   0,0000   1,0000 │
+└──────────────────┘
