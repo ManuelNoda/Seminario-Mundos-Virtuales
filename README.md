@@ -1,4 +1,4 @@
-# 🧠 **Cuestionario — 18 Preguntas**
+# 🧠 **Seminario: Mundos virtuales.**
 
 > 💡 **Instrucciones:**  
 > Responde a las siguientes cuestiones y, en los casos que sea posible, relaciónalas con los contenidos explicados en la sesión de *Mundos Virtuales*.  
