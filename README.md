@@ -47,7 +47,18 @@ Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de l
 ¿Obtendrías el mismo resultado en ambos casos? Justifica el resultado.  
 
 **✏️ Respuesta:**  
-...
+  Para este caso hemos realizado dos scripts: uno de movimiento y rotación.  
+👉[MovimientoRotación](./scripts/TrasladarRotar.cs)
+
+ - Foto resultado
+
+  Y el segundo para rotar y luego mover.
+👉[RotacioónMovimiento](./scripts/rotarTrasladar.cs)
+
+- Foto resultado
+
+  Llegamso a la conclusión de que no es lo mismo rotar y mover que mover y rotar.Esto es porque la rotación cambia el sistema de ejes locales del objeto; si trasladas después, esa traslación se interpreta respecto a los ejes ya rotados, por lo que el vector de movimiento apunta en una dirección distinta. En cambio, si trasladas antes (cuando los ejes locales coinciden con los globales), la rotación posterior solo cambia la orientación del objeto y no su posición.
+
 
 ## 🌍 **Pregunta 3**
 **🔹 Enunciado:**  
@@ -68,7 +79,7 @@ Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el 
 ¿Cómo puedes aumentar el ángulo de la cámara? ¿Qué efecto tiene disminuir el ángulo de la cámara?  
 
 **✏️ Respuesta:**  
-...
+... SACAR CAPTURA EN EL CC
 
 ## 🌍 **Pregunta 6**
 **🔹 Enunciado:**  
@@ -76,14 +87,19 @@ Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el 
 > “Para realizar la proyección al espacio 2D, en el inspector de la cámara, cambiaremos el valor de *Projection*, asignándole el valor de *Orthographic*.”
 
 **✏️ Respuesta:**  
-...
+... En efecto esta sentencia si entendemos “proyección al espacio 2D” como una proyección sin profundidad (una vista ortográfica de un entorno 3D).
 
 ## 🌍 **Pregunta 7**
 **🔹 Enunciado:**  
 Especifica las rotaciones que se han indicado en los ejercicios previos con la utilidad `Quaternion`.  
 
 **✏️ Respuesta:**  
-...
+... Para ello hemos modificada los 2 scrips anteriores implementado Quaterniones
+
+👉[MovimientoRotación](./scripts/trasladarMQuaterniones.cs)
+👉[RotacioónMovimiento](./scripts/rotarTQuaerniones.cs)
+
+  Al implementar cuaterniones conseguimos  que las rotaciones se realizan de forma más precisa y estable, evitando los problemas de Gimbal Lock (bloqueo de ejes) que pueden ocurrir al usar rotaciones basadas directamente en ángulos de Euler.
 
 ## 🌍 **Pregunta 8**
 **🔹 Enunciado:**  
@@ -111,7 +127,12 @@ Especifica las rotaciones que se han indicado en los ejercicios previos con la u
 ¿Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista?  
 
 **✏️ Respuesta:**  
-...
+... Podemos obtenerla con un script en C# como el que hemos realizado para este caso.
+
+👉[MatrizDeVista](./scripts/matrizVista.cs)
+
+-FOTO Y EXPLICACION
+
 
 ## 🌍 **Pregunta 12**
 **🔹 Enunciado:**  
@@ -132,7 +153,11 @@ Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práct
 Aplica una rotación en el método `Start()` de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.  
 
 **✏️ Respuesta:**  
-...
+... Este es el scipt que hemos usado para obtener la matriz de cambio.
+
+👉[MatrizDeCambio](./scripts/matrizCambio.cs)
+
+-FOTO DE RESULTADO Y EXPLICACION
 
 ## 🌍 **Pregunta 15**
 **🔹 Enunciado:**  
