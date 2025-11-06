@@ -166,7 +166,11 @@ Aplica una rotación en el método `Start()` de uno de los objetos de la escena 
 
 👉[MatrizDeCambio](./scripts/matrizCambio.cs)
 
--FOTO DE RESULTADO Y EXPLICACION
+![img4](img/matizcambio.PNG)
+
+
+Los números de rotación (0.7071) provienen de la  de un giro de 45° sobre el eje Y,
+y los de posición (1.4440, 2.0600, 0.4800) se leen directamente de la última columna de la matriz.
 
 ## 🌍 **Pregunta 15**
 **🔹 Enunciado:**  
