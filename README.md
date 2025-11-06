@@ -51,13 +51,13 @@ Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de l
   
 👉[MovimientoRotación](./scripts/trasladarRotar.cs)
 
- - Foto resultado
+![img1](img/moverrotar.PNG)
 
   Y el segundo para rotar y luego mover.
   
 👉[RotacioónMovimiento](./scripts/rotarTrasladar.cs)
 
-- Foto resultado
+![img2](img/rotarmover.PNG)
 
   Llegamso a la conclusión de que no es lo mismo rotar y mover que mover y rotar.Esto es porque la rotación cambia el sistema de ejes locales del objeto; si trasladas después, esa traslación se interpreta respecto a los ejes ya rotados, por lo que el vector de movimiento apunta en una dirección distinta. En cambio, si trasladas antes (cuando los ejes locales coinciden con los globales), la rotación posterior solo cambia la orientación del objeto y no su posición.
 
@@ -138,7 +138,9 @@ Especifica las rotaciones que se han indicado en los ejercicios previos con la u
 
 👉[MatrizDeVista](./scripts/matrizVista.cs)
 
--FOTO Y EXPLICACION
+![img3](img/matrizvista.PNG)
+
+El resultado de la matriz de vista nos  dice dónde está la cámara y cómo está orientada en el espacio del mundo,
 
 
 ## 🌍 **Pregunta 12**
