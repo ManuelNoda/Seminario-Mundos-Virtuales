@@ -81,8 +81,11 @@ Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el 
 ¿Cómo puedes aumentar el ángulo de la cámara? ¿Qué efecto tiene disminuir el ángulo de la cámara?  
 
 **✏️ Respuesta:**  
-p  Podemos hacerlo con un script, pero de manera más comoda desde el inspector de escena
-... SACAR CAPTURA EN EL CC
+ Podemos hacerlo con un script, pero de manera más comoda desde el inspector de escena.
+
+ ![img](./img/capturacamara.PNG)
+
+ En el Inspector de la cámara, podemos modificar el parámetro "Field of View"  bajo la sección de "Projection". Aumentar el valor del "Field of View" hará que la cámara abarque un ángulo más amplio, lo que puede generar una sensación de mayor amplitud o de espacio abierto. Disminuir el ángulo, reduciendo el valor del Field of View , hace que la cámara tenga un ángulo más cerrado, lo que podría resultar en una sensación de claustrofobia o enfoque en un área más reducida.
 
 ## 🌍 **Pregunta 6**
 **🔹 Enunciado:**  
