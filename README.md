@@ -48,11 +48,13 @@ Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de l
 
 **✏️ Respuesta:**  
   Para este caso hemos realizado dos scripts: uno de movimiento y rotación.  
-👉[MovimientoRotación](./scripts/TrasladarRotar.cs)
+  
+👉[MovimientoRotación](./scripts/trasladarRotar.cs)
 
  - Foto resultado
 
   Y el segundo para rotar y luego mover.
+  
 👉[RotacioónMovimiento](./scripts/rotarTrasladar.cs)
 
 - Foto resultado
@@ -79,6 +81,7 @@ Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el 
 ¿Cómo puedes aumentar el ángulo de la cámara? ¿Qué efecto tiene disminuir el ángulo de la cámara?  
 
 **✏️ Respuesta:**  
+p  Podemos hacerlo con un script, pero de manera más comoda desde el inspector de escena
 ... SACAR CAPTURA EN EL CC
 
 ## 🌍 **Pregunta 6**
