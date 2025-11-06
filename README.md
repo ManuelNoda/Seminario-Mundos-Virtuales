@@ -103,6 +103,7 @@ Especifica las rotaciones que se han indicado en los ejercicios previos con la u
 ... Para ello hemos modificada los 2 scrips anteriores implementado Quaterniones
 
 👉[MovimientoRotación](./scripts/trasladarMQuaterniones.cs)
+
 👉[RotacioónMovimiento](./scripts/rotarTQuaerniones.cs)
 
   Al implementar cuaterniones conseguimos  que las rotaciones se realizan de forma más precisa y estable, evitando los problemas de Gimbal Lock (bloqueo de ejes) que pueden ocurrir al usar rotaciones basadas directamente en ángulos de Euler.
