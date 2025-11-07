@@ -59,7 +59,7 @@ Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de l
 
 ![img2](img/rotarmover.PNG)
 
-  Llegamso a la conclusión de que no es lo mismo rotar y mover que mover y rotar.Esto es porque la rotación cambia el sistema de ejes locales del objeto; si trasladas después, esa traslación se interpreta respecto a los ejes ya rotados, por lo que el vector de movimiento apunta en una dirección distinta. En cambio, si trasladas antes (cuando los ejes locales coinciden con los globales), la rotación posterior solo cambia la orientación del objeto y no su posición.
+  Llegamos a la conclusión de que no es lo mismo rotar y mover que mover y rotar.Esto es porque la rotación cambia el sistema de ejes locales del objeto; si trasladas después, esa traslación se interpreta respecto a los ejes ya rotados, por lo que el vector de movimiento apunta en una dirección distinta. En cambio, si trasladas antes (cuando los ejes locales coinciden con los globales), la rotación posterior solo cambia la orientación del objeto y no su posición.
 
 
 ## 🌍 **Pregunta 3**
@@ -146,7 +146,7 @@ Para obtener ambas matrices se puede utilizar el script [MatrixLocalWorldApartad
 ¿Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista?  
 
 **✏️ Respuesta:**  
-... Podemos obtenerla con un script en C# como el que hemos realizado para este caso.
+Podemos obtenerla con un script en C# como el que hemos realizado para este caso.
 
 👉[MatrizDeVista](./scripts/matrizVista.cs)
 
