@@ -222,7 +222,13 @@ Indica cómo cambia su valor en cada espacio.
 Aplica la transformación manualmente a un punto (por ejemplo `(0.5, 0.5, 0.5)`) y registra los resultados paso a paso.  
 
 **✏️ Respuesta:**  
-...
+Se ha aplicado el proceso de conversión de coordenadas locales hasta coordenadas en el viewport como utilizando el script [DebugVertexApartado17.cs](src/DebugVertexApartado17.cs).
+
+Procedimiento a papel:
+![calculosApartado17.png](media/calculosApartado17.png)
+
+Y podemos verlo en Unity:
+![apartado17.png](media/apartado17.png)
 
 ## 🌍 **Pregunta 18**
 **🔹 Enunciado:**  
