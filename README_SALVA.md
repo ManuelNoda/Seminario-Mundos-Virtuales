@@ -54,14 +54,18 @@ Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de l
 Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.  
 
 **✏️ Respuesta:**  
-...
+Se ha modificado la variable `near` de los planos de la cámara con los cuales se obtiene el frustum, de tal forma que corta parcialmente la esfera, esto provoca que se renderice parte de la misma.
+
+![apartado3.png](media/apartado3.png)
 
 ## 🌍 **Pregunta 4**
 **🔹 Enunciado:**  
 Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.  
 
 **✏️ Respuesta:**  
-...
+Al modificar la variable `near` de los planos de la cámara que resultan en el frustum de tal forma que la esfera quede fuera de este volumen, provoca que la esfera no se renderice.
+
+![apartado4.png](media/apartado4.png)
 
 ## 🌍 **Pregunta 5**
 **🔹 Enunciado:**  
@@ -90,7 +94,11 @@ Especifica las rotaciones que se han indicado en los ejercicios previos con la u
 ¿Cómo puedes averiguar la matriz de proyección en perspectiva que se ha usado para proyectar la escena al último *frame* renderizado?  
 
 **✏️ Respuesta:**  
-...
+El componente `Camera` posee las variables `projectionMatrix` y `previousViewProjectionMatrix` las cuales almacenan las matrices de proyección utilizada en el frame actual, y la utilizada en el frame inmediatamente anterior respectivamente.
+
+Podemos observar como se obtiene en el script [ProjectionApartado8.cs](src/ProjectionApartado8.cs).
+
+![aparatdo8.png](media/apartado8.png)
 
 ## 🌍 **Pregunta 9**
 **🔹 Enunciado:**  
@@ -104,7 +112,11 @@ Especifica las rotaciones que se han indicado en los ejercicios previos con la u
 ¿Cómo puedes obtener la matriz de transformación entre el sistema de coordenadas local y el mundial?  
 
 **✏️ Respuesta:**  
-...
+Cada **GameObject** contiene su componente `Transform`, dicho componente posee las variables `worldToLocalMatrix` y `localToWorldMatrix`, las variables contienen las matrices de transformación entre los sistemas de referencia local y mundial.
+
+Para obtener ambas matrices se puede utilizar el script [MatrixLocalWorldApartado10.cs](src/MatrixLocalWorldApartado10.cs).
+
+![apartado10.png](media/apartado10.png)
 
 ## 🌍 **Pregunta 11**
 **🔹 Enunciado:**  
@@ -118,11 +130,18 @@ Especifica las rotaciones que se han indicado en los ejercicios previos con la u
 Especifica la matriz de proyección usada en un instante de la ejecución del ejercicio 1 de la práctica 1.  
 
 **✏️ Respuesta:**  
-...
+En la escena de la práctica 3, se ha utilizado el script [MostrarMatrizApartado12.cs](src/MostrarMatrizApartado12.cs) para obtener la matriz de proyección.
+
+![apartado12.png](media/apartado12.png)
 
 ## 🌍 **Pregunta 13**
 **🔹 Enunciado:**  
-Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.  
+Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.
+
+En la escena de la práctica 3, se ha utilizado el script [MostrarMatricesApartado13.cs](src/MostrarMatricesApartado13.cs) para obtener la matriz de modelo de la cápsula y la matriz de vista de la cámara.
+
+![apartado13_1.png](media/apartado13_1.png)
+![apartado13_2.png](media/apartado13_2.png)
 
 **✏️ Respuesta:**  
 ...
@@ -153,7 +172,9 @@ Crea una escena en Unity con los siguientes elementos:
 Realiza un script de depuración adjunto a la cámara que muestre en consola o pantalla las matrices de transformación (`Model`, `View`, `Projection`) y sus resultados sobre un vértice de cada cubo.  
 
 **✏️ Respuesta:**  
-...
+Se ha creado la escena con los elementos necesarios, y el script [DebugVertex.cs](src/DebugVertex.cs) para calcular las coordenadas respecto al clip de la cámara en base a cada vértice izquierdo más próximo a la cámara de cada cubo.
+
+![apartado16.png](media/apartado16.png)
 
 ## 🌍 **Pregunta 17**
 **🔹 Enunciado:**  
@@ -173,14 +194,3 @@ Cambia entre proyección ortográfica y perspectiva y compara las diferencias nu
 
 **✏️ Respuesta:**  
 ...
-
-## 📝 **Notas finales**
-- Utiliza formato Markdown para una mejor presentación:  
-  - **Negrita** → conceptos clave  
-  - *Cursiva* → ejemplos o aclaraciones  
-  - `Código` → términos técnicos  
-- Si una pregunta requiere un cálculo, inclúyelo así:
-
-  ```text
-  Ejemplo de cálculo:
-  Z = X + Y / 2

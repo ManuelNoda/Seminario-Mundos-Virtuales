@@ -1,0 +1,36 @@
+using System.Text;
+using UnityEngine;
+
+public class MatrixLocalWorldApartado10 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        Debug.Log("Matriz local a mundial: " + FormatMatrix(transform.localToWorldMatrix));
+        Debug.Log("Matriz mundial a local: " + FormatMatrix(transform.worldToLocalMatrix));
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    string FormatMatrix(Matrix4x4 m)
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine("\n┌──────────────────┐");
+
+        for (int i = 0; i < 4; i++)
+        {
+            sb.Append("│ ");
+            for (int j = 0; j < 4; j++)
+            {
+                sb.Append($"{m[i, j],8:F4} ");
+            }
+            sb.AppendLine("│");
+        }
+
+        sb.AppendLine("└──────────────────┘");
+        return sb.ToString();
+    }
+}
