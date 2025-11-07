@@ -168,20 +168,18 @@ En la escena de la práctica 3, se ha utilizado el script [MostrarMatrizApartado
 **🔹 Enunciado:**  
 Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.
 
+**✏️ Respuesta:**  
 En la escena de la práctica 3, se ha utilizado el script [MostrarMatricesApartado13.cs](src/MostrarMatricesApartado13.cs) para obtener la matriz de modelo de la cápsula y la matriz de vista de la cámara.
 
 ![apartado13_1.png](media/apartado13_1.png)
 ![apartado13_2.png](media/apartado13_2.png)
-
-**✏️ Respuesta:**  
-...
 
 ## 🌍 **Pregunta 14**
 **🔹 Enunciado:**  
 Aplica una rotación en el método `Start()` de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.  
 
 **✏️ Respuesta:**  
-... Este es el scipt que hemos usado para obtener la matriz de cambio.
+Este es el scipt que hemos usado para obtener la matriz de cambio.
 
 👉[MatrizDeCambio](./scripts/matrizCambio.cs)
 
