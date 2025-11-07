@@ -55,7 +55,7 @@ Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de l
 
   Y el segundo para rotar y luego mover.
   
-👉[RotacioónMovimiento](./scripts/rotarTrasladar.cs)
+👉[RotaciónMovimiento](./scripts/rotarTrasladar.cs)
 
 ![img2](img/rotarmover.PNG)
 
