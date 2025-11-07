@@ -1,6 +1,5 @@
 # 🧠 **Seminario: Mundos virtuales.**
 
-a
 > 💡 **Instrucciones:**  
 > Responde a las siguientes cuestiones y, en los casos que sea posible, relaciónalas con los contenidos explicados en la sesión de *Mundos Virtuales*.  
 > Usa ejemplos, imágenes o fragmentos de código cuando ayuden a ilustrar tu respuesta.
